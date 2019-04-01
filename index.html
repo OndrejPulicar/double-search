@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" type = "text/css" href = "styles/reset.css" />
+    <link rel = "stylesheet" type = "text/css" href = "styles/app.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="main-logo"></div>
+    </header>
+    <nav id="search-panel">
+        <input type="search" id="search-input" aria-label='eg. "Dark Knight Returns"'>
+        <button id="search-button">Search</button>
+    </nav>
+    <div id="preloader-cont" class="hidden">
+        <div id="preloader"></div>
+    </div>
+    <div id="main-results-cont" class="hidden"> 
+        <div id="image-results-cont" class="results-cont">
+            <h2>Images:</h2>
+            <ul id="image-results" class="results">
+
+            </ul>
+            <button id='image-results-load-more' class="load-more">Load more image results</button>
+        </div> 
+        <div id="text-results-cont" class="results-cont">
+            <h2>Web pages:</h2>
+            <ul id="text-results" class="results">
+
+            </ul>
+            <button id='text-results-load-more' class="load-more">Load more text results</button>
+        </div> 
+    </div>  
+    <footer>
+        by Ondřej Pulicar (2019)
+    </footer>
+    <script>
+        'use strict';
+        var app = {};
+
+        window.onload = function() {
+            app = new App();
+            app.init();
+        };
+    </script>
+    <script src="components/ImageItem.js"></script>
+    <script src="components/TextItem.js"></script>
+    <script src="components/List.js"></script>
+    <script src="components/SearchBar.js"></script>
+    <script src="components/App.js"></script>
+</body>
+</html>

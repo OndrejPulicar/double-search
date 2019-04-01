@@ -1,0 +1,177 @@
+body {
+    background-color: #f4f4f4;
+    color: black;
+    font-family: Tahoma;
+    padding-bottom: 2em;
+}
+
+button {
+    font-family: inherit;
+    border: 0;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+#main-logo {
+    width: 200px;
+    height: 115px;
+    background-image: url('../img/logo.png');
+    margin: 20px;
+}
+
+#search-panel,
+#main-results-cont  {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+#search-panel,
+footer {
+    background-color: #DBDBDB;
+    padding: 10px;
+}
+
+#search-input,
+#search-button {
+    margin: 10px;
+}
+
+#search-input {
+    width: 400px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+#search-input:focus {
+    outline: 0;
+}
+
+#search-button {
+    background-color: #E51B23;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#preloader-cont {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+#preloader {
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/preloader.gif');
+    margin: 20px;
+}
+
+.results-cont {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.results-cont > * {
+    margin: 10px;
+}
+
+.results-cont h2 {
+    text-align: left;
+    margin: 20px 0 0 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.results  {
+    flex-basis: 50px;
+    list-style-position: inside;
+}
+
+.no-results-info {
+    padding: 10px;
+}
+
+#image-results {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#image-results > .image-item {
+    background-color: #fff;
+    color: black;
+    min-width: 150px;
+    margin: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    width: 150px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+#text-results > .text-item {
+    margin: 10px;
+    padding: 5px;
+}
+
+#text-results > .text-item:hover,
+#image-results > .image-item:hover {
+    background-color: rgba(0,0,0,.05);
+}
+
+.text-item > .text-title,
+.text-item > .text-url {
+    cursor: pointer;
+}
+
+.text-item > .text-title {
+    color: #E51B23;
+    text-decoration: underline;
+}
+
+.text-item > .text-url {
+    color: rgba(0,0,0,.6);
+}
+
+.text-item > .text-snippet {
+    font-size: 0.9em;
+}
+
+.text-item > * {
+    padding: 2px;
+}
+
+.image-item > .image-title {
+    width: 140px;
+    margin: 5px;
+    text-align: left;
+    font-size: 0.7em;
+}
+
+.image-item > img {
+    width: 100%;
+}
+
+.load-more {
+    background-color: #E51B23;
+    color: #ffffff;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.75em;
+    height: 1em;
+    margin-top: -15px; /* just a dirty fix, so the footer and the search bar look morre compact at the beginning */
+}
+
+.hidden {
+    display: none!important; /* using !important as this class will be added dynamicaly */
+}
