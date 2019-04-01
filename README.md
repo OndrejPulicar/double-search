@@ -9,3 +9,4 @@ Had I have more time, I would:
 2. Make it responsive for very small screens.
 3. Make it compatible with other browsers than Chrome.
 4. Give image results that didn't load properly a placeholder image.
+5. Load thumbnails for the search results and open links to proper sized images when clicking on the search result.
